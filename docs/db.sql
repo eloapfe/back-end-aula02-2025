@@ -1,3 +1,5 @@
+DELETE DATABASE IF EXISTS clinica;
+DELETE DATABASE IF EXISTS medicos;
 CREATE DATABASE clinica;
 USE clinica;
 
@@ -10,3 +12,14 @@ CREATE TABLE clientes(
 
 ALTER TABLE clientes CHANGE COLUMN nascimento nascimento DATE;
 DESCRIBE clientes;
+
+CREATE TABLE medicos(
+    id_medico INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    crm VARCHAR(20) NOT NULL,
+    especialidade VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
+
+DESCRIBE medicos;

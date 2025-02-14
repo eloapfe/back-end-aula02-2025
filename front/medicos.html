@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Médicos</title>
+    <link rel="stylesheet" href="medicos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Médicos</h1>
+        <form id="medicoForm">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="crm" placeholder="CRM" required>
+            <input type="text" id="especialidade" placeholder="Especialidade" required>
+            <input type="text" id="telefone" placeholder="Telefone">
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Cadastrar Médico</button>
+        </form>
+
+        <h2>Lista de Médicos</h2>
+        <table id="medicosTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CRM</th>
+                    <th>Especialidade</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="api/controller/medicos.js"></script>
+    <
+</body>
+</html>
